@@ -1,0 +1,53 @@
+// =====================================
+// FOOTER BOTTOM
+// =====================================
+// Linha inferior do footer com copyright e créditos
+
+export default function FooterBottom() {
+  return (
+    <div className="border-t border-white/20 pt-8 mt-8">
+      <div
+        style={{ fontFamily: "Source Sans Pro, sans-serif" }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center md:text-left text-xs text-white/70"
+      >
+        {/* Copyright */}
+        <div>
+          <p>Copyright © {new Date().getFullYear()} Cartório Luciana Carrilho de Moraes Marinho - CNPJ 55.429.936/0001-24</p>
+        </div>
+
+        {/* Créditos de desenvolvimento */}
+        <div className="md:text-right">
+          <p className="text-white/90 font-medium inline">
+            Desenvolvido por:{' '}
+            <a
+              href="https://github.com/andrearraesDev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-white transition-colors hover:underline text-xs"
+            >
+              André Arraes
+            </a>
+            {', '}
+            <a
+              href="https://gabriellucasafb.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-white transition-colors hover:underline text-xs"
+            >
+              Gabriel Lucas
+            </a>
+            {' e '}
+            <a
+              href="https://www.viniccius.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-white transition-colors hover:underline text-xs"
+            >
+              Vinicius Souza
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
